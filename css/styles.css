@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", serif;
+font-family: "Open Sans", serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  /*********** PRIMARY *************/
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /*************** NEUTRAL ************/
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+body {
+  font-family: "Poppins", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*********** HEADER *************/
+header {
+  width: 100%;
+  padding: 2em 1.5em;
+  margin-bottom: 8em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 7em;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav button {
+  font-weight: 400;
+  color: var(--light-pink);
+  border-radius: 50px;
+  border: 1px solid var(--light-pink);
+  padding: 0.5em 1.7em;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+nav button:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+/************ INTRODUCTION ***************/
+.intro,
+.mockup,
+.stats {
+  padding: 0 1.5em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5em;
+  margin-bottom: 5em;
+}
+
+.intro h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+}
+
+.intro p {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--very-dark-cyan);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.intro button {
+  font-weight: 600;
+  padding: 1.2em 4em;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: var(--pink);
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.intro button:hover {
+  background-color: var(--light-pink);
+}
+
+/******* STATS *******/
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4em;
+}
+
+.comms-stat,
+.message-stat {
+  padding: 3em 3em;
+}
+
+.comm-img,
+.message-img {
+  width: 16%;
+}
+
+.comms-stat h2,
+.message-stat h2 {
+  font-family: "Open Sans", serif;
+  font-size: 3.5em;
+  color: var(--very-dark-cyan);
+}
+
+.stats p {
+  text-align: center;
+  opacity: 0.4;
+}
+
+/************* 1ST BOUNDARY IMAGE ***************/
+
+.boundary-img {
+  width: 100%;
+  height: 190px;
+  background-image: url(../images/bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************************* FEATURES ********************/
+.background-two h3,
+.background-three .text h3,
+.background-four .text h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+}
+
+.background-two p,
+.background-three .text p,
+.background-four .text p {
+  color: var(--very-dark-cyan);
+  font-weight: 400;
+}
+/********** Growth Section **********/
+Section article:nth-child(1) {
+  margin-bottom: 6em;
+}
+
+.background-two {
+  text-align: center;
+  background-color: var(--very-pale-blue);
+}
+
+.background-two .text {
+  padding: 0 1.5em;
+}
+
+.background-two h3 {
+  margin-bottom: 0.3em;
+}
+
+.grow-img {
+  padding: 6em 1.5em 6em 1.5em;
+}
+
+.background-two p {
+  font-family: "Open Sans", serif;
+  padding-bottom: 4em;
+}
+
+/****** 2ND BOUNDARY IMAGE *********/
+
+.boundary-img2 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/bg-section-bottom-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/******** Conversation Section *******/
+
+.background-three {
+  text-align: center;
+}
+
+.convo-img,
+.background-three .text {
+  padding: 0 1.5em;
+  margin-bottom: 4em;
+}
+
+.background-three .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.background-three .text p {
+  font-family: "Open Sans", serif;
+  color: var(--very-dark-cyan);
+  font-weight: 400;
+}
+
+/****** 3RD BOUNDARY IMAGE *******/
+.boundary-img3 {
+  width: 100%;
+  height: 180px;
+  background-image: url(../images/bg-section-top-mobile-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/****** USERS SECTION **********/
+Section article:nth-child(3) {
+  margin-bottom: 0em;
+}
+
+.background-four {
+  text-align: center;
+  background-color: var(--very-pale-blue);
+}
+
+.users-img,
+.background-four .text {
+  padding: 0 1.5em;
+}
+
+.users-img {
+  padding: 1em;
+}
+
+.background-four .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.background-four .text h3 {
+  font-size: 1.5em;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+}
+
+.background-four .text p {
+  padding-bottom: 6em;
+}
+
+/******* 4TH BOUNDARY IMAGE ********/
+.boundary-img4 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/bg-section-bottom-mobile-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5em;
+}
+
+/***************************** SUBSCRIPTION SECTION ************************/
+#cta {
+  text-align: center;
+  color: var(--very-dark-cyan);
+  margin-bottom: 10em;
+  /* margin-bottom: 2em; */
+  /* /* background-image: url(../images/bg-footer-top-mobile.svg);  */
+}
+
+#cta h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#cta button {
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  padding: 1.2em 4em;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: var(--pink);
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#cta button:hover {
+  background-color: var(--light-pink);
+}
+
+/********************** FOOTER ***************************/
+footer {
+  width: 100%;
+}
+
+/***** 5TH BOUNDARY IMAGE *******/
+
+.boundary-img5 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/bg-footer-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-color {
+  background-color: var(--very-dark-cyan);
+  padding: 4em 1.5em 1em 1.5em;
+  color: var(--very-pale-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+footer p {
+  font-family: "Open Sans", serif;
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+/****** EMAIL *********/
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+input {
+  padding: 1.7em 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  border: none;
+}
+
+input::placeholder {
+  font-family: "Open Sans", serif;
+  font-size: 1.2em;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+form button {
+  align-self: self-end;
+  width: 50%;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  background-color: var(--pink);
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: "Open Sans", serif;
+  transition: 0.2s ease;
+}
+
+form button:hover {
+  background-color: var(--light-pink);
+  cursor: pointer;
+}
+
+/********* CONTACT INFO ***********/
+.contact-info .logo {
+  filter: invert(100%) sepia(100%) brightness(1000%) contrast(100%);
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.contact-info p {
+  margin-bottom: 3em;
+}
+
+.social .phone {
+  margin-bottom: 1em;
+}
+
+.social .email {
+  margin-bottom: 3em;
+}
+
+.social .phone,
+.social .email {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  text-decoration: none;
+}
+
+.social .phone img,
+.social .email img {
+  width: 7%;
+}
+
+.social .phone p,
+.social .email p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  color: var(--very-pale-blue);
+}
+
+.social-media-links {
+  display: flex;
+  gap: 1.5em;
+}
+
+.social-media-links .facebook,
+.social-media-links .x,
+.social-media-links .instagram {
+  color: white;
+}
+
+.social-media-links .facebook:hover,
+.social-media-links .x:hover,
+.social-media-links .instagram:hover {
+  color: rgb(135, 208, 233);
+}
+
+.social-media-links .facebook i,
+.social-media-links .x i,
+.social-media-links .instagram i {
+  font-size: 2em;
+}
+
+/************************************ RESPONSIVENESS ************************************/
+@media only screen and (min-width: 768px) {
+  nav .logo {
+    width: 9em;
+  }
+
+  .intro h1 {
+    font-size: 1.9em;
+  }
+
+  .intro p {
+    width: 47%;
+  }
+
+  .intro button {
+    font-size: 1.1em;
+    border-radius: 40px;
+  }
+
+  .stats {
+    flex-direction: row;
+    gap: 7em;
+  }
+
+  .background-two,
+  .background-four {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+  }
+
+  .background-three .text {
+    padding-right: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .background-two .text,
+  .background-three .text,
+  .background-four .text {
+    text-align: left;
+  }
+
+  .background-two .text h3 {
+    padding: 0;
+  }
+
+  .background-two .text h3,
+  .background-three .text h3,
+  .background-four .text h3 {
+    font-size: 2em;
+  }
+
+  .background-two .text p,
+  .background-four .text p {
+    width: 80%;
+  }
+
+  .background-three .text p {
+    width: 95%;
+  }
+
+  .background-four .text p {
+    padding-bottom: 0;
+  }
+
+  #cta h3 {
+    font-size: 2.2em;
+  }
+
+  #cta button {
+    font-size: 1.1em;
+    padding: 1.2em 4em;
+    border-radius: 40px;
+  }
+
+  .boundary-img {
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+  }
+
+  .boundary-img2 {
+    background-image: url(../images/bg-section-bottom-desktop-1.svg);
+  }
+
+  .boundary-img3 {
+    background-image: url(../images/bg-section-top-desktop-2.svg);
+  }
+
+  .boundary-img4 {
+    background-image: url(../images/bg-section-bottom-desktop-2.svg);
+  }
+
+  .boundary-img5 {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+  }
+
+  footer .background-color {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  footer p {
+    width: 50%;
+  }
+
+  form {
+    flex-direction: row;
+
+    gap: 2em;
+  }
+
+  input {
+    margin-bottom: 0;
+    padding: 1.2em 1.2em;
+    width: 62%;
+  }
+
+  form button {
+    width: 30%;
+  }
+
+  .contact-info .logo {
+    width: 30%;
+  }
+
+  .contact-info p {
+    width: 50%;
+  }
+
+  .social a p {
+    width: 100%;
+  }
+
+  .social .phone img,
+  .social .email img {
+    width: 4%;
+  }
+}
+
+/********************************* ERROR MESSAGE *****************************/
+
+.error-msg {
+  position: absolute;
+  top: 110%;
+  color: var(--light-red);
+  font-family: "Open Sans", serif;
+  display: none;
+}
+
+.error-msg.display-err {
+  display: block;
+}
+
+.border-color {
+  border: 2px solid var(--light-red);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
