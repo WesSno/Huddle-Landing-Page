@@ -473,7 +473,11 @@ form button:hover {
 /************************************ RESPONSIVENESS ************************************/
 @media only screen and (min-width: 768px) {
   nav .logo {
-    width: 9em;
+    width: 10em;
+  }
+
+  nav button {
+    font-size: 1.1em;
   }
 
   .intro h1 {
